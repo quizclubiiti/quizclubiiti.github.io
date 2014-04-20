@@ -237,3 +237,4 @@ cout<<"\n Subject #"<<j+1<<":\t "<<a.group[j];
 
 return 0;
 }
+// thts bad
