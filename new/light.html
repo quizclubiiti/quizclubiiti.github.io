@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<style type="text/css">
+body {
+  
+      background: url(back2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+  @font-face{
+    font-family: my_font;
+    src: url(Gabriela-Regular.ttf);
+  }
+   
+     @font-face{
+    font-family: my_font2;
+    src: url(Lobster.ttf);
+  }
+     @font-face{
+    font-family: my_font3;
+    src: url(Lora-Italic.ttf);
+  }
+    @font-face{
+    font-family: my_font4;
+    src: url(Lora-BoldItalic.ttf);
+  }
+#head
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: my_font;
+}
+}
+ 
+</style>
+<body bgcolor="black"><head>
+    <meta charset="UTF-8">
+    <title >Gallery</title>
+
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" />
+    <link href="bootstrap-lightbox.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div id="head">
+                <h2>Gallery</h2>
+                </div>
+                <div id="demoLightbox" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="lightbox-content">
+                        <img src="images_for_gallery/DSC09105.jpg" />
+                        <div class="lightbox-caption">
+                            <p>Winners of Obscura-2.o</p>
+                        </div>
+                    </div>
+                 </div>   
+                <div id="Lightbox2" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="lightbox-content">
+                        <img src="qfest.jpg" />
+                        <div class="lightbox-caption">
+                            <p>Quiz Fest</p>
+                        </div>
+                    </div>
+                    <!--  <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button> -->
+                </div>
+                <div id="Lightbox3" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">    
+                    <div class="lightbox-content">
+                        <img src="images_for_gallery/DSC09108.jpg" />
+                        <div class="lightbox-caption">
+                            <p> Obscura-2.o finalists</p>
+                        </div>
+                    </div>
+                </div>    
+                <div id="Lightbox4" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="lightbox-content">
+                        <img src="images_for_gallery/DSC09109.jpg" />
+                        <div class="lightbox-caption">
+                            <p>Obscura-2.o finalists</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="Lightbox5" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="lightbox-content">
+                        <img src="images_for_gallery/DSC09110.jpg" />
+                        <div class="lightbox-caption">
+                            <p>Obscura-2.o finalists</p>
+                        </div>
+                    </div>
+                </div>   
+                <div id="Lightbox6" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true"> 
+                    <div class="lightbox-content">
+                        <img src="images_for_gallery/DSC09118.jpg" />
+                        <div class="lightbox-caption">
+                            <p>Obscura-2.o organizer</p>
+                        </div>
+                    </div>
+                </div>    
+                
+                
+                 <ul class="thumbnails">
+                <li class="span3">
+                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#demoLightbox"><img class="group1" src="images_for_gallery/DSC09105.jpg" title="Image Title" /></a>
+                    </li> <!--end thumb -->
+                    <li class="span3">
+                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox2"><img class="group1" src="qfest.jpg" title="Image Title" /></a>
+                    </li> <!--end thumb -->
+                    <li class="span3">
+                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox3"><img class="group1" src="images_for_gallery/DSC09108.jpg" title="Image Title" /></a>
+                    </li> <!--end thumb -->
+                    <li class="span3">
+                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox4"><img class="group1" src="images_for_gallery/DSC09109.jpg" title="Image Title" /></a>
+                    </li> <!--end thumb -->
+                    <li class="span3">
+                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox5"><img class="group1" src="images_for_gallery/DSC09110.jpg" title="Image Title" /></a>
+                    </li> <!--end thumb -->
+                     <li class="span3">
+                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox6"><img class="group1" src="images_for_gallery/DSC09118.jpg" title="Image Title" /></a>
+                    </li> <!--end thumb -->
+
+            </ul><!--end thumbnails -->
+
+
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="bootstrap-lightbox.js"></script>
+</body>
+</html>
