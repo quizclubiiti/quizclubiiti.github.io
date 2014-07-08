@@ -4406,7 +4406,7 @@ a.list-group-item.active > .badge,
   margin-bottom: 20px;
   line-height: 1.42857143;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 0px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
@@ -4755,6 +4755,7 @@ a.list-group-item-danger.active:focus {
   line-height: 1.3;
 }
 .panel {
+  width: 800px;
   margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid transparent;
@@ -4778,7 +4779,7 @@ a.list-group-item-danger.active:focus {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
-  color: inherit;
+  color: #FFFFFF;
 }
 .panel-title > a {
   color: inherit;
@@ -4956,7 +4957,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-default > .panel-heading {
   color: #333;
-  background-color: #f5f5f5;
+  background-color: #424242;
   border-color: #ddd;
 }
 .panel-default > .panel-heading + .panel-collapse .panel-body {
@@ -4966,18 +4967,18 @@ a.list-group-item-danger.active:focus {
   border-bottom-color: #ddd;
 }
 .panel-primary {
-  border-color: #428bca;
+  border-color: #424242;
 }
 .panel-primary > .panel-heading {
   color: #fff;
-  background-color: #428bca;
-  border-color: #428bca;
+  background-color: #424242;
+  border-color: #424242;
 }
 .panel-primary > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #428bca;
+  border-top-color: #424242;
 }
 .panel-primary > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #428bca;
+  border-bottom-color: #424242;
 }
 .panel-success {
   border-color: #d6e9c6;
