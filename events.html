@@ -1,0 +1,188 @@
+<!doctype html>
+    <html>
+        <head>
+        <link rel="shortcut icon" href="static/img/logo.png">
+         <title>Quiz Club | IIT Indore</title>
+         <meta name="description" content="Quiz club of IIT Indore, where quizes of different genres are organised throughout the year.It also organises the 
+         Quiz Fest, in Fluxus, the largest cultural and technical fest of central India.">
+          <link href="static/css/bootstrap.css" rel="stylesheet">
+          <script src="static/js/jquery.js"></script>
+          <script src="static/js/bootstrap.js"></script>
+          <script src="static/js/bootstrap-table-nav.js"></script>
+          <style>
+            nav>ul
+            {
+              display: table;
+              margin:0 auto;
+            }
+            ul>li
+            {
+              list-style-type: none;
+              display: inline;
+              padding:0.4em 0.8em;
+              font-size: 18px;
+            }
+          </style>
+        </head>
+        <body>
+        <div id="header">
+          <a target="_blank" href="http://iiti.ac.in/"><img src="static/img/logo.png" style="height:50px;float:left;padding:0 10px 0 10px;"></a>
+          <p style="font-size:28px;">
+            Quiz Club
+          </p>
+        </div>
+        <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+       <div class="navbar-header">
+          <a class="navbar-brand" href="#" title data-original-title="Home">Quiz Club</a>
+       </div>
+       <div class="nav-collapse">
+          <ul class="nav nav-pills">
+              <li onclick="home()"><a href="#">Home</a></li>
+              <li onclick="events()"><a href="#">Events</a></li>
+              <li onclick="team()"><a href="#">Team</a></li>
+              <li onclick="gallery()"><a href="#">Gallery</a></li>
+              <li onclick="contactus()"><a href="#">Contact Us</a></li>
+              <li style="float:right;top:12px;left:10px;"><iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fquizclubiitindore&width=100&layout=standard&action=like&show_faces=false&share=false&height=35&appId=475175309271367" scrolling="no" frameborder="0" style="border:none;overflow:hidden; width:50px; height:20px; margin: 0 auto;float:center;float:right;" allowtransparency="true"></iframe></li>
+          </ul>
+       </div>
+    </div>
+  </nav>
+              
+            <center><div class="panel-group" id="accordion">
+<!-- for quizooka start -->
+  <div class="panel panel-default" >
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          QUIZOOKA-The General Quiz
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        <center><img src="static/img/quizfest.jpg"/></center>
+        <br>"The more you learn, the more you realize how little you know.."  Socrates<br>
+        Think you know about a thing or two? You dare challenge the machine?<br>
+        Get ready to be baffled and bombarded with questions about everything under the sun. Not for the faint-hearted, 'Quizooka' will test your knowledge; in<br>a manner like no other... delving into trivia you never knew... a lot of times about things you thought you knew (as a worthy challenger).<br>
+      </div>
+    </div>
+  </div>
+  <!-- for eureka -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          EUREKA-The Why and How Quiz
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        <center><img src="static/img/eureka.jpg"/></center>
+        <br>Ever wondered what shooting stars were? Or, what is it that turned the sky blue?<br>
+        Did it ever strike you to know the reason behind them?<br>
+        If you have preserved this curious child in you, who questions almost everything he does not know the reason for, you are just at the right place!<br>
+        Eureka is Quiz Club's move to make you quench your Archimedian thirst!<br>
+        So, bring in with your aura, the Eureka factor...
+      </div>
+    </div>
+  </div>
+  <!-- for obscura starts-->
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseobs">
+          OBSCURA- The IQ Quiz
+        </a>
+      </h4>
+    </div>
+    <div id="collapseobs" class="panel-collapse collapse">
+      <div class="panel-body">
+        <center><img src="static/img/obscura.jpg"/></center>
+        <br>"We wish you first, a sense of logic<br>
+        Only those who know illusion and love it, will go far.<br>
+        Otherwise you spend your lives in confusion...<br>
+        Of what you think they are stating, to what they really are!!"<br>
+        Obscura-IQ Quiz is the foremost event of The Quiz Fest that needs you to put your wits in the nifty world of logic. This event swirls you<br>
+        through exciting rounds of Einstein Riddles, Murder mysteries, Logical Thinking<br>
+        and much more to test your logical and deductive skills.<br>
+        The best thing about Obscura is that, for it's namesake, it puts only your quotient of intelligence to test. Common Sense is all what you need! What we wished you first)<br>
+        So,
+        Come. Go far. Win it!
+      </div>
+    </div>
+  </div>
+  <!-- for colosseum starts -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapsecolo">
+          COLOSSEUM: The Entertainment and Sports Quiz
+        </a>
+      </h4>
+    </div>
+    <div id="collapsecolo" class="panel-collapse collapse">
+      <div class="panel-body">
+        <center><img src="static/img/colossium.jpg"/></center>
+        <br>Welcome to The Colosseum- where Sports and Entertainment collide in a profusion of blood and sweat<br>
+        The year is 90 AD. All the stands are filled. The crowd is excited. The tension in the air is palpable. Caesar and the Pretoria are lounging in their <br>boxes. The rich adjust their feather cushions. The poor haggle spiritedly over bets.<br>
+        The people are happy.<br>
+      The Colosseum is an arena for the knowledgeable folks of the world. Do you have what it takes to escape devious traps set for sports? Do you have what it<br>takes to parry questions about entertainment? DO YOU HAVE WHAT IT TAKES TO WIN THE APPROVAL OF THE CROWD?
+      </div>
+    </div>
+  </div>
+    <!-- for technophilia starts -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapsetechno" >
+          TECHNOPHILIA- The IT Quiz
+        </a>
+      </h4>
+    </div>
+    <div id="collapsetechno" class="panel-collapse collapse">
+      <div class="panel-body">
+        <center><img src="static/img/technophilia.jpg"/></center>
+       <br> So you think you keep yourself updated with the latest buzz of tech world???/"If you tried to read every document on the web, then for each day's effort,<br> you would be a year further behind in your goal." So not just latest but it's about the whole journey of tech evolution... Do you think you're up to <br>the challenge? Then wait no further! Join us to test your knowledge, and know where you stand...
+      </div>
+    </div>
+  </div>
+      <!-- for quizzeria starts -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapsequizzeria">
+          QUIZZERIA- Online Quizzing Event
+        </a>
+      </h4>
+    </div>
+    <div id="collapsequizzeria" class="panel-collapse collapse">
+      <div class="panel-body">
+        <center><img src=""/></center>
+        <br>BAnim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <!-- for freshers start -->
+  <div class="panel panel-default" >
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapsefresh">
+          FRESHERS' QUIZ
+        </a>
+      </h4>
+    </div>
+    <div id="collapsefresh" class="panel-collapse collapse ">
+      <div class="panel-body">
+        <center><img src=""/></center>
+        <br>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div></center>
+</center>
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script src="js/bootstrap.js" type="text/javascript"></script>
+  <script type="text/javascript" src="static/js/topmenu.js"></script> 
+        </body>
+    </html>
