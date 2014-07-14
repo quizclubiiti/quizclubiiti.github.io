@@ -10,53 +10,53 @@
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" />
     <link href="bootstrap-lightbox.css" rel="stylesheet" />
     <style>
-    #nav_bar{
-   /*position: fixed;*/
-    background-color: blue;
-    color:white;
-    margin:0px;
-    width:100%;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    background:black;
-
+    nav>ul
+    {
+        display: table;
+        margin:0 auto;
     }
-    #nav_bar ul{
-    padding:10px;
+    ul>li
+    {
+        list-style-type: none;
+        display: inline;
+        padding:0.4em 0.8em;
+        font-size: 18px;
     }
-    #nav_bar li{
-        display:inline-block;
-        list-style: none;
-      font:italic 18px Helvetica;
-      padding:1px 50px;
-      vertical-align: center;
-
-    }
-         #nav_bar li:hover{
-    background:white;
-    color:blue;
-   }
     </style>
+    <!--<link href="static/css/bootstrap.css" rel="stylesheet">
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/bootstrap.js"></script> -->
 </head>
 <body>
-<nav id="nav_bar" >
-      <ul id="ul_bar">
-        <div id="box">
-         <li style="float:left;margin:left:40px;padding-left:40px">Home</li>
-        </div> 
-         <li style="float:left;margin-left:40px;padding-left:40px;padding-right:40px">Events</li>
-         <li style="margin:0px 40px 0px 110px ">Team</li>
-         <li style="float:right;margin-right:110px;padding-right:40px;padding-left:40px;margin-left:100px"> contact us</li>
-         <li style="float:right;margin-left:40px;padding-left:40px">Gallery</li>
-      </ul>
-   </nav>
+    <!-- <div id="header">
+        <a target="_blank" href="http://iiti.ac.in/"><img src="static/img/logo.png" style="height:50px;float:left;padding:0 10px 0 10px;"></a>
+        <p style="font-size:28px;">
+            Quiz Club
+        </p>
+    </div>
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+           <div class="navbar-header">
+              <a class="navbar-brand" href="#" title data-original-title="Home">Quiz Club</a>
+           </div>
+           <div class="nav-collapse">
+              <ul class="nav nav-pills">
+                    <li onclick="home()"><a href="#">Home</a></li>
+                    <li onclick="events()"><a href="#">Events</a></li>
+                    <li onclick="team()"><a href="#">Team</a></li>
+                    <li onclick="gallery()"><a href="#">Gallery</a></li>
+                    <li onclick="contactus()"><a href="#">Contact Us</a></li>
+                    <li style="float:right;top:12px;left:10px;"><iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fquizclubiitindore&width=100&layout=standard&action=like&show_faces=false&share=false&height=35&appId=475175309271367" scrolling="no" frameborder="0" style="border:none;overflow:hidden; width:50px; height:20px; margin: 0 auto;float:center;float:right;" allowtransparency="true"></iframe></li>
+              </ul>
+           </div>
+        </div>
+    </nav> -->
     <div class="container">
         <div class="row">
             <div class="span12">
                 <div id="demoLightbox" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="lightbox-content">
-                        <img src="static/img/gallery/winners.jpg" />
+                        <img src="static/img/eureka.jpg" />
                         <div class="lightbox-caption">
                             <p>Winners of Obscura-2.o</p>
                         </div>
@@ -64,7 +64,7 @@
                  </div>   
                 <div id="Lightbox2" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="lightbox-content">
-                        <img src="static/img/gallery/qfest.jpg" />
+                        <img src="static/img/quizfest.jpg" />
                         <div class="lightbox-caption">
                             <p>Quiz Fest</p>
                         </div>
@@ -72,7 +72,7 @@
                 </div>
                 <div id="Lightbox3" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">    
                     <div class="lightbox-content">
-                        <img src="static/img/gallery/finalists1.jpg" />
+                        <img src="static/img/technophilia.jpg" />
                         <div class="lightbox-caption">
                             <p> Obscura-2.o finalists</p>
                         </div>
@@ -80,7 +80,7 @@
                 </div>    
                 <div id="Lightbox4" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="lightbox-content">
-                        <img src="static/img/gallery/finalists2.jpg" />
+                        <img src="static/img/obscura.jpg" />
                         <div class="lightbox-caption">
                             <p>Obscura-2.o finalists</p>
                         </div>
@@ -88,40 +88,27 @@
                 </div>
                 <div id="Lightbox5" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="lightbox-content">
-                        <img src="static/img/gallery/finalists3.jpg" />
+                        <img src="static/img/colossium.jpg" />
                         <div class="lightbox-caption">
                             <p>Obscura-2.o finalists</p>
                         </div>
                     </div>
-                </div>   
-                <div id="Lightbox6" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true"> 
-                    <div class="lightbox-content">
-                        <img src="static/img/gallery/organisers.jpg" />
-                        <div class="lightbox-caption">
-                            <p>Obscura-2.o organiser</p>
-                        </div>
-                    </div>
                 </div>    
-                
-                
-                 <ul class="thumbnails">
+                <ul class="thumbnails">
                 <li class="span3">
-                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#demoLightbox"><img class="group1" src="static/img/gallery/winners.jpg" title="Image Title" /></a>
+                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#demoLightbox"><img class="group1" src="static/img/eureka.jpg" title="Image Title" /></a>
                     </li> <!--end thumb -->
                     <li class="span3">
-                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox2"><img class="group1" src="static/img/gallery/qfest.jpg" title="Image Title" /></a>
+                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox2"><img class="group1" src="static/img/quizfest.jpg" title="Image Title" /></a>
                     </li> <!--end thumb -->
                     <li class="span3">
-                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox3"><img class="group1" src="static/img/gallery/finalists1.jpg" title="Image Title" /></a>
+                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox3"><img class="group1" src="static/img/technophilia.jpg" title="Image Title" /></a>
                     </li> <!--end thumb -->
                     <li class="span3">
-                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox4"><img class="group1" src="static/img/gallery/finalists2.jpg" title="Image Title" /></a>
+                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox4"><img class="group1" src="static/img/obscura.jpg" title="Image Title" /></a>
                     </li> <!--end thumb -->
                     <li class="span3">
-                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox5"><img class="group1" src="static/img/gallery/finalists3.jpg" title="Image Title" /></a>
-                    </li> <!--end thumb -->
-                     <li class="span3">
-                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox6"><img class="group1" src="static/img/gallery/organisers.jpg" title="Image Title" /></a>
+                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox5"><img class="group1" src="static/img/colossium.jpg" title="Image Title" /></a>
                     </li> <!--end thumb -->
 
             </ul><!--end thumbnails -->
