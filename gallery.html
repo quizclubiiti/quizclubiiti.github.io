@@ -10,21 +10,47 @@
     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" />
     <link href="bootstrap-lightbox.css" rel="stylesheet" />
     <style>
-    nav>ul
-    {
-        display: table;
-        margin:0 auto;
+    #nav_bar{
+   /*position: fixed;*/
+    background-color: blue;
+    color:white;
+    margin:0px;
+    width:100%;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background:black;
+
     }
-    ul>li
-    {
-        list-style-type: none;
-        display: inline;
-        padding:0.4em 0.8em;
-        font-size: 18px;
+    #nav_bar ul{
+    padding:10px;
     }
+    #nav_bar li{
+        display:inline-block;
+        list-style: none;
+      font:italic 18px Helvetica;
+      padding:1px 50px;
+      vertical-align: center;
+
+    }
+         #nav_bar li:hover{
+    background:white;
+    color:blue;
+   }
     </style>
 </head>
 <body>
+<nav id="nav_bar" >
+      <ul id="ul_bar">
+        <div id="box">
+         <li style="float:left;margin:left:40px;padding-left:40px">Home</li>
+        </div> 
+         <li style="float:left;margin-left:40px;padding-left:40px;padding-right:40px">Events</li>
+         <li style="margin:0px 40px 0px 110px ">Team</li>
+         <li style="float:right;margin-right:110px;padding-right:40px;padding-left:40px;margin-left:100px"> contact us</li>
+         <li style="float:right;margin-left:40px;padding-left:40px">Gallery</li>
+      </ul>
+   </nav>
     <div class="container">
         <div class="row">
             <div class="span12">
@@ -72,7 +98,7 @@
                     <div class="lightbox-content">
                         <img src="static/img/gallery/DSC09118.jpg" />
                         <div class="lightbox-caption">
-                            <p>Obscura-2.o organizer</p>
+                            <p>Obscura-2.o organiser</p>
                         </div>
                     </div>
                 </div>    
