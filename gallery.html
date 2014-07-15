@@ -52,6 +52,41 @@
             padding:0.4em 0.8em;
             font-size: 18px;
         }
+         #nav_bar li:hover{
+    background:white;
+    color:black;
+    -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+   }
+     #nav_bar{
+   /*position: fixed;*/
+    background-color: black;
+    color:white;
+    margin:0px;
+    width:100%;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background:black;
+  
+
+    }
+    #nav_bar ul{
+    padding:10px;
+    }
+    #nav_bar li{
+        display:inline-block;
+        list-style: none;
+      font: 20px Helvetica;
+      padding:1px 50px;
+      padding-top: 5px;
+      padding-bottom: 5px
+      vertical-align: center;
+
+    }
     </style>
 </head>
 
@@ -72,30 +107,26 @@
     <nav class="navbar navbar-inverse navbar-static-top">
 
     </div>
-<nav class="navbar navbar-inverse navbar-static-top">
 
-        <div class="container">
-           <div class="navbar-header">
-              <a class="navbar-brand" href="#" title data-original-title="Home">Quiz Club</a>
-           </div>
-           <div class="nav-collapse">
-              <ul class="nav nav-pills">
-                    <li onclick="home()"><a href="#">Home</a></li>
-                    <li onclick="events()"><a href="#">Events</a></li>
-                    <li onclick="team()"><a href="#">Team</a></li>
-                    <li onclick="gallery()" class="active"><a href="#">Gallery</a></li>
-                    <li onclick="contactus()"><a href="#">Contact Us</a></li>
-                    <li style="float:right;top:12px;left:10px;"><iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fquizclubiitindore&width=100&layout=standard&action=like&show_faces=false&share=false&height=35&appId=475175309271367" scrolling="no" frameborder="0" style="border:none;overflow:hidden; width:50px; height:20px; margin: 0 auto;float:center;float:right;" allowtransparency="true"></iframe></li>
-              </ul>
-           </div>
-        </div>
+ <nav id="nav_bar" >
+      <ul id="ul_bar">
+        <li style="float:left;margin:left:40px;padding-left:40px;curser:pointer;" onclick="home()">Home</li>
+        <li style="float:left;margin-left:40px;padding-left:40px;padding-right:40px;curser:pointer;" onclick="events()">Events</li>
+         <li style="margin:0px 40px 0px 110px;curser:pointer; " onclick="team()">Team</li>
+         <li style="float:right;margin-right:110px;padding-right:40px;padding-left:40px;margin-left:100px;curser:pointer;" onclick="gallery()"> Gallery</li>
+         <li style="float:right;margin-left:40px;padding-left:40px;curser:pointer;" onclick="contactus()">Contact Us</li>
+         <!-- <div>clear both</div> -->
+         <!-- <div id="hmm"></div> -->
+      </ul>
+   </nav>
 
-    </nav> 
+
+
     <!-- <center><h3><b>Gallery</b></h3></center> -->
      <link href="css/bootstrap-lightbox.css" rel="stylesheet" /> 
 
     </nav>
-    
+    <br><br>
 
     <div class="container">
         <div class="row">
