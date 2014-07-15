@@ -104,6 +104,24 @@
 		<a target="_blank" href="#"><img src="Social_Icons/youtube.png" width="48" height="48"></a>
 	</div><br>
 	</center>
+<<<<<<< HEAD
+	<script type="text/javascript" src="static/js/topmenu.js"></script> 
+<?php
+   $to = "vidyaranya.ns@gmail.com";
+   $subject = "This is subject";
+   $message = "This is simple text message.";
+   $header = "From:abc@somedomain.com \r\n";
+   $retval = mail ($to,$subject,$message,$header);
+   if( $retval == true )  
+   {
+      echo "Message sent successfully...";
+   }
+   else
+   {
+      echo "Message could not be sent...";
+   }
+?>
+=======
 	
 <form id="contact-form" name="contact-form" method="post" action="form-processing.php">
     <p>
@@ -128,4 +146,5 @@
     </p>
   </form> 
   <script type="text/javascript" src="static/js/topmenu.js"></script> 
+>>>>>>> 772391f221092187d501ceb6ba0abe679aff5f3a
 </body>
