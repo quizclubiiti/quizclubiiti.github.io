@@ -1,61 +1,58 @@
-<?php
-
-while (list($key, $val) = @each($_GET)) $GLOBALS[$key] = $val;
-while (list($key, $val) = @each($_POST)) $GLOBALS[$key] = $val;
-while (list($key, $val) = @each($_COOKIE)) $GLOBALS[$key] = $val;
-while (list($key, $val) = @each($_FILES)) $GLOBALS[$key] = $val;
-while (list($key, $val) = @each($_SESSION)) $GLOBALS[$key] = $val;
-
-/* Subject and Email Variables */
-
-	$emailSubject = 'Contact Form';
-	$webMaster = 'vidyaranya.ns@gmail.com';
-	
-/* Gathering Data Variables */
-
-	$nameField = $_POST['Name'];
-	$emailField = $_POST['Email'];
-	$messageField = $_POST['Message'];
-	
-	$body = <<<EOD
-<br><hr><br>
-Name: $nameField <br>
-Email: $emailField <br>
-Message: $messageField <br>
-EOD;
-
-	$headers = "From: $email\r\n";
-	$headers .= "Content-type: text/html\r\n";
-	$success = mail($webMaster, $emailSubject, $body, $headers);
-	
-/* Results Rendered as HTML */
-
-	$theResults = <<<EOD
 <html>
 <head>
-<title></title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><br />
-<meta HTTP-EQUIV="REFRESH" content="0; url=http://quizclubiiti.github.io/quizclub.html">
-<style type="text/css">
-<!--
-body {
-	background-color: #fffff;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-style: normal;
-	line-height: normal;
-	font-weight: normal;
-	color: #000000;
-	text-decoration: none;
-}
--->
-</style>
+<title>Thanks For Contacting Us</title>
 </head>
-<div align="left">
-Redirecting you...</div>
+<body>
+<?php
+  
+  $recipient = 'vidyaranya.ns@gmail.com';
+  $email = $_POST['email'];
+  $realName = $_POST['realname'];
+  $subject = $_POST['subject'];
+  $body = $_POST['body'];
+  # We'll make a list of error messages in an array
+  $messages = array();
+# Allow only reasonable email addresses
+if (!preg_match("/^[\w\+\-.~]+\@[\-\w\.\!]+$/", $email)) {
+$messages[] = "That is not a valid email address.";
+}
+# Allow only reasonable real names
+if (!preg_match("/^[\w\ \+\-\'\"]+$/", $realName)) {
+$messages[] = "The real name field must contain only " .
+"alphabetical characters, numbers, spaces, and " .
+"reasonable punctuation. We apologize for any inconvenience.";
+}
+# CAREFUL: don't allow hackers to sneak line breaks and additional
+# headers into the message and trick us into spamming for them!
+$subject = preg_replace('/\s+/', ' ', $subject);
+# Make sure the subject isn't blank afterwards!
+if (preg_match('/^\s*$/', $subject)) {
+$messages[] = "Please specify a subject for your message.";
+}
+
+$body = $_POST['body'];
+# Make sure the message has a body
+if (preg_match('/^\s*$/', $body)) {
+$messages[] = "Your message was blank. Did you mean to say " .
+"something?"; 
+}
+  if (count($messages)) {
+    # There were problems, so tell the user and
+    # don't send the message yet
+    foreach ($messages as $message) {
+      echo("<p>$message</p>\n");
+    }
+    echo("<p>Click the back button and correct the problems. " .
+      "Then click Send Your Message again.</p>");
+  } else {
+    # Send the email - we're done
+mail($recipient,
+      $subject,
+      $body,
+      "From: $realName <$email>\r\n" .
+      "Reply-To: $realName <$email>\r\n"); 
+    echo("<p>Your message has been sent. Thank you!</p>\n");
+  }
+?>
 </body>
 </html>
-EOD;
-echo "$theResults";
-
-?>
