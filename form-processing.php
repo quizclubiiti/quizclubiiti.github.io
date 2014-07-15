@@ -3,8 +3,13 @@
 <title>Thanks For Contacting Us</title>
 </head>
 <body>
+
 <?php
-  
+    error_page 405 =200 @405;
+location @405 {
+root /htdocs;
+proxy_pass http://localhost:8080;
+}
   $recipient = 'vidyaranya.ns@gmail.com';
   $email = $_POST['email'];
   $realName = $_POST['realname'];
