@@ -13,22 +13,20 @@
   # We'll make a list of error messages in an array
   $messages = array();
 # Allow only reasonable email addresses
-if (!preg_match("/^[\w\+\-.~]+\@[\-\w\.\!]+$/", $email)) {
-$messages[] = "That is not a valid email address.";
+if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email)) {
+  $emailErr = "Invalid email format"; 
 }
 # Allow only reasonable real names
-if (!preg_match("/^[\w\ \+\-\'\"]+$/", $realName)) {
-$messages[] = "The real name field must contain only " .
-"alphabetical characters, numbers, spaces, and " .
-"reasonable punctuation. We apologize for any inconvenience.";
+if (!preg_match("/^[a-zA-Z0-9 ]*$/",$name)) {
+  $nameErr = "Only letters,numbers and white space allowed"; 
 }
 # CAREFUL: don't allow hackers to sneak line breaks and additional
 # headers into the message and trick us into spamming for them!
-$subject = preg_replace('/\s+/', ' ', $subject);
+/*$subject = preg_replace('/\s+/', ' ', $subject);
 # Make sure the subject isn't blank afterwards!
 if (preg_match('/^\s*$/', $subject)) {
 $messages[] = "Please specify a subject for your message.";
-}
+}*/
 
 $body = $_POST['body'];
 # Make sure the message has a body
@@ -56,3 +54,25 @@ mail($recipient,
 ?>
 </body>
 </html>
+
+
+
+
+<!-- NAME :
+
+if (!preg_match("/^[a-zA-Z0-9 ]*$/",$name)) {
+  $nameErr = "Only letters,numbers and white space allowed"; 
+}
+
+NOTE : i dint get about reasonable punctuations ... i mean .. there is no need of allowing special characters in name checking !!!
+
+E-MAIL :
+
+if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email)) {
+  $emailErr = "Invalid email format"; 
+}
+
+MESSAGE :
+
+no need of checking !!! -->
+
