@@ -79,7 +79,7 @@ mail($recipient,
 
 
 
-<!-- NAME :
+<!-- /* NAME :
 
 if (!preg_match("/^[a-zA-Z0-9 ]*$/",$name)) {
   $nameErr = "Only letters,numbers and white space allowed"; 
