@@ -1,246 +1,89 @@
 <!doctype html>
-
-<html lang="en">
 <head>
-
-<html>
-<body bgcolor="black"><head>
-
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="static/img/logo.png">
-    <title>Quiz Club | IIT Indore</title>
-    <meta name="description" content="Quiz club of IIT Indore, where quizes of different genres are organised throughout the year.It also organises the 
-    Quiz Fest, in Fluxus, the largest cultural and technical fest of central India.">
+	<link rel="shortcut icon" href="static/img/logo.png">
+	<title>Quiz Club | IIT Indore</title>
+	<meta name="description" content="Quiz club of IIT Indore, where quizes of different genres are organised throughout the year.It also organises the 
+	Quiz Fest, in Fluxus, the largest cultural and technical fest of central India.">
+	<style>
+		nav>ul
+		{
+			display: table;
+			margin:0 auto;
+		}
+		ul>li
+		{
+			list-style-type: none;
+			display: inline;
+			padding:0.4em 0.8em;
+			font-size: 18px;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="default.css" />
+    <link href="hexaflip.css" rel="stylesheet" type="text/css">
+        <link href="demo.css" rel="stylesheet" type="text/css">
 </head>
-    
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" />
-         <!-- <link href="static/css/bootstrap.css" rel="stylesheet">  -->
-         <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> -->
-           <!-- <link href="static/css/bootstrap.css" rel="stylesheet">  -->
-    <script src="static/js/jquery.js"></script>
-    <script src="static/js/bootstrap.js"></script> 
-    <style>
-    nav>ul
-    {
-        display: table;
-        margin:0 auto;
-    }
-    ul>li
-    {
-        list-style-type: none;
-        display: inline;
-        padding:0.4em 0.8em;
-        font-size: 18px;
-    }
-    </style>
-
-</head>
-<body>
-    <div id="header">
-        <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" />
-    <link href="static/css/bootstrap-lightbox.css" rel="stylesheet" />
-    <style>
-        nav>ul
-        {
-            display: table;
-            margin:0 auto;
-        }
-        ul>li
-        {
-            list-style-type: none;
-            display: inline;
-            padding:0.4em 0.8em;
-            font-size: 18px;
-        }
-         #nav_bar li:hover{
-    background:white;
-    color:black;
-    -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-   }
-     #nav_bar{
-   /*position: fixed;*/
-    background-color: black;
-    color:white;
-    margin:0px;
-    width:100%;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
-    background:black;
-  
-
-    }
-    #nav_bar ul{
-    padding:10px;
-    }
-    #nav_bar li{
-        display:inline-block;
-        list-style: none;
-      font: 20px Helvetica;
-      padding:1px 50px;
-      padding-top: 5px;
-      padding-bottom: 5px
-      vertical-align: center;
-
-    }
-    </style>
-</head>
-
-<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" />
-    <link href="new/bootstrap-lightbox.css" rel="stylesheet" />
+<link href="static/css/bootstrap.css" rel="stylesheet">
 <script src="static/js/jquery.js"></script>
 <script src="static/js/bootstrap.js"></script>
 <script src="static/js/bootstrap-table-nav.js"></script>
 <body>
-<div id="header">
-
-        <a target="_blank" href="http://iiti.ac.in/"><img src="static/img/logo.png" style="height:50px;float:left;padding:0 10px 0 10px;"></a>
-        <p style="font-size:28px;">
-            Quiz Club
-        </p>
-
-    </div> 
-    
-
-    </div>
-<nav class="navbar navbar-inverse navbar-static-top">
-        <div class="container">
-           <div class="navbar-header">
-              <a class="navbar-brand" href="#" title data-original-title="Home">Quiz Club</a>
-           </div>
-           <div class="nav-collapse">
-              <ul class="nav nav-pills">
-                    <li onclick="home()"><a href="#"><img src="static/img/home1.png" height="30" width="30"> Home</a></li>
-                    <li onclick="events()"><a href="#"><img src="static/img/events.png" height="30" width="30"> Events</a></li>
-                    <li onclick="team()"><a href="#"><img src="static/img/team.png" height="30" width="30"> Team</a></li>
-                    <li onclick="gallery()" class="active"><a href="#"><img src="static/img/gallery.png" height="30" width="30"> Gallery</a></li>
-                    <li onclick="contactus()"><a href="#"><img src="static/img/contactus.png" height="30" width="30"> Contact Us</a></li>
-                    <li style="float:right;top:12px;left:10px;"><iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fquizclubiitindore&width=100&layout=standard&action=like&show_faces=false&share=false&height=35&appId=475175309271367" scrolling="no" frameborder="0" style="border:none;overflow:hidden; width:50px; height:20px; margin: 0 auto;float:center;float:right;" allowtransparency="true"></iframe></li>
-              </ul>
-           </div>
-        </div>
-    </nav>
-     <link href="css/bootstrap-lightbox.css" rel="stylesheet" /> 
-
-    </nav>
-    <br><br>
-
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                <div id="demoLightbox" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="lightbox-content">
-
-                        <img src="static/img/eureka.jpg" />
-
-                    
-
-                        <div class="lightbox-caption">
-                            <p>Winners of Obscura-2.o</p>
-                        </div>
-                    </div>
-                 </div>   
-                <div id="Lightbox2" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="lightbox-content">
-
-                        <img src="static/img/quizfest.jpg" />
-
-                     
-                        <div class="lightbox-caption">
-                            <p>Quiz Fest</p>
-                        </div>
-                    </div>
+	<div id="header">
+		<a target="_blank" href="http://iiti.ac.in/"><img src="static/img/logo.png" style="height:50px;float:left;padding:0 10px 0 10px;"></a>
+		<p style="font-size:28px;">
+			Quiz Club
+		</p>
+	</div>
+	<nav class="navbar navbar-inverse navbar-static-top">
+		<div class="container">
+		   <div class="navbar-header">
+		      <a class="navbar-brand" href="#" title data-original-title="Home">Quiz Club</a>
+		   </div>
+		   <div class="nav-collapse">
+		      <ul class="nav nav-pills">
+		      		<li onclick="home()"><a href="#"><img src="static/img/home1.png" height="30" width="30"> Home</a></li>
+		      		<li onclick="events()"><a href="#"><img src="static/img/events.png" height="30" width="30"> Events</a></li>
+		      		<li onclick="team()"><a href="#"><img src="static/img/team.png" height="30" width="30"> Team</a></li>
+		      		<li onclick="gallery()" class="active"><a href="#"><img src="static/img/gallery.png" height="30" width="30"> Gallery</a></li>
+		      		<li onclick="contactus()"><a href="#"><img src="static/img/contactus.png" height="30" width="30"> Contact Us</a></li>
+		      		<li style="float:right;top:12px;left:10px;"><iframe src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fquizclubiitindore&width=100&layout=standard&action=like&show_faces=false&share=false&height=35&appId=475175309271367" scrolling="no" frameborder="0" style="border:none;overflow:hidden; width:50px; height:20px; margin: 0 auto;float:center;float:right;" allowtransparency="true"></iframe></li>
+		      </ul>
+		   </div>
+		</div>
+	</nav>
+	<div class="container">
+            <div class="main">
+                <div class="buttons">
+                    <div id="prev" class="disc-button">&lt;</div>
+                    <div id="next" class="disc-button">&gt;</div>
                 </div>
-                <div id="Lightbox3" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">    
-                    <div class="lightbox-content">
-
-                        <img src="static/img/technophilia.jpg" />
-
-                   
-                        <div class="lightbox-caption">
-                            <p> Obscura-2.o finalists</p>
-                        </div>
-                    </div>
-                </div>    
-                <div id="Lightbox4" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="lightbox-content">
-
-                        <img src="static/img/obscura.jpg" />
-
-   
-
-                        <div class="lightbox-caption">
-                            <p>Obscura-2.o finalists</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="Lightbox5" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="lightbox-content">
-
-                        <img src="static/img/colossium.jpg" />
-
-              
-
-                        <div class="lightbox-caption">
-                            <p>Obscura-2.o finalists</p>
-                        </div>
-                    </div>
-
-                </div>    
-                <div style="float: right; padding-left:100px">
-                <ul class="thumbnails">
-                <li class="span3">
-                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#demoLightbox"><img class="group1" src="static/img/eureka.jpg" title="Image Title" /></a>
-                    </li> <!--end thumb -->
-                    <li class="span3">
-                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox2"><img class="group1" src="static/img/quizfest.jpg" title="Image Title" /></a>
-                    </li> <!--end thumb -->
-                    <li class="span3">
-                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox3"><img class="group1" src="static/img/technophilia.jpg" title="Image Title" /></a>
-                    </li> <!--end thumb -->
-                    <li class="span3">
-                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox4"><img class="group1" src="static/img/obscura.jpg" title="Image Title" /></a>
-                    </li> <!--end thumb -->
-                    <li class="span3">
-                        <a data-toggle="lightbox" class="thumbnail" rel="lightbox[group]" href="#Lightbox5"><img class="group1" src="static/img/colossium.jpg" title="Image Title" /></a>
-                    </li> <!--end thumb -->
-
-            </ul><!--end thumbnails -->
-</div>
-
-                </div>   
-                <div id="Lightbox6" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true"> 
-                    <div class="lightbox-content">
-                        <img src="static/img/gallery/DSC09118.jpg" />
-                        <div class="lightbox-caption">
-                            <p>Obscura-2.o organizer</p>
-                        </div>
-                    </div>
-                </div>    
-                
-                
-        
-
-
-
-                </a>
-                
+                <div id="hexaflip-demo4" class="demo"></div>
             </div>
         </div>
-    </div>
-    
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="hexaflip.js"></script>
+    <script>
+        var hexaDemo4,
+            images = [
+                './static/img/gallery/1.jpg',
+                './static/img/gallery/2.jpg',
+                './static/img/gallery/3.jpg',
+                './static/img/gallery/4.jpg',
+                './static/img/gallery/5.jpg',
+                './static/img/gallery/6.jpg'
+            ];
+        document.addEventListener('DOMContentLoaded', function(){
+            hexaDemo4 = new HexaFlip(document.getElementById('hexaflip-demo4'), {set: images},{
+                size: 500
+            });
+            document.getElementById('prev').addEventListener('click', function(){
+                hexaDemo4.flipBack();
+            }, false);
+            
+            document.getElementById('next').addEventListener('click', function(){
+                hexaDemo4.flip();
+            }, false);
 
-    <script src="bootstrap-lightbox.js"></script>
+        }, false);
 
-    <script src="new/bootstrap-lightbox.js"></script>
-
+    </script>
     <script type="text/javascript" src="static/js/topmenu.js"></script> 
 </body>
-</html>
