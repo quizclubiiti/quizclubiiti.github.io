@@ -10,18 +10,23 @@
         <meta name="description" content="Quiz club of IIT Indore, where quizes of different genres are organised throughout the year.It also organises the 
         Quiz Fest, in Fluxus, the largest cultural and technical fest of central India.">
         <style>
+        body
+        {
+            background-image : url('static/img/bg.jpg');
+            background-size: 100%;
+        }
         </style>
     </head>
     <body>
         <div id="header">
-            <a target="_blank" href="http://iiti.ac.in/"><img src="static/img/logo.png" style="height:50px;float:left;padding:0 10px 0 10px;"></a>
-            <h1 style="color:#424242;font-size:40px;">
+            <a target="_blank" href="http://iiti.ac.in/"><img src="static/img/logo.png" style="opacity:0.9;height:50px;float:left;padding:0 10px 0 10px;"></a>
+            <h1 style="opacity:0.9;color:white;font-size:40px;">
                 Quiz Club
             </h1>
         </div>
         <div class="container">
             <center><br>
-            <h2>See if you can get the password.</h2><br>
+            <h2 style="color:white;">See if you can get the password.</h2><br>
             <div class="main">
                 <div id="hexaflip-demo5" class="demo"></div>
                 <div>
@@ -40,7 +45,7 @@
             setc = [{    value: 'I',    style: {        color:'#424242',        backgroundColor: '#ffffff'    }},{    value: 'Q',    style: {        color : '#424242',        backgroundColor: '#ffffff'    }},{    value: 'U',    style: {        color:'#ffffff',        backgroundColor: '#424242'    }},{    value: 'Z',    style: {        color:'#ffffff',        backgroundColor: '#424242'    }}
             ],
             setd = [{    value: 'Q',    style: {        color : '#ffffff',        backgroundColor: '#424242'    }},{    value: 'U',    style: {        color:'#ffffff',        backgroundColor: '#424242'    }},{    value: 'I',    style: {        color:'#424242',        backgroundColor: '#ffffff'    }},{    value: 'Z',style: {color:'#ffffff',backgroundColor: '#424242'}}];
-        document.addEventListener('DOMContentLoaded', function(){
+            document.addEventListener('DOMContentLoaded', function(){
             var submit = document.getElementById('submit'); 
             hexaDemo5 = new HexaFlip(document.getElementById('hexaflip-demo5'),
                 {set1: seta, set2: setb, set3: setd, set4: setc},
@@ -59,7 +64,7 @@
                     hexaDemo5.flip();
                     setTimeout(function() {window.open("quizclub.html","_self");}, 1000);
                 }else{
-                    output.innerHTML = '<center>Watch out, password incorrect!</center><a style="font-size:20px;float:right;top:1000px;text-decoration:none;color:#424242;" href="quizclub.html">Enter the site directly!</a>';
+                    output.innerHTML = '<center><a style="color:white;font-size:20px;">Watch out, password incorrect!</a></center><br><a style="font-size:30px;float:right;top:1000px;text-decoration:none;color:white;" href="quizclub.html">Enter the site directly!</a>';
                 }
             }, false);
         }, false);
