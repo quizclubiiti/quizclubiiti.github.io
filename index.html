@@ -20,13 +20,13 @@
     <body>
         <div id="header">
             <a target="_blank" href="http://iiti.ac.in/"><img src="static/img/logo.png" style="opacity:0.9;height:50px;float:left;padding:0 10px 0 10px;"></a>
-            <h1 style="opacity:0.9;color:white;font-size:40px;">
+            <h1 style="font-size:40px;">
                 Quiz Club
             </h1>
         </div>
         <div class="container">
             <center><br>
-            <h2 style="color:white;">See if you can get the password.</h2><br>
+            <h2>See if you can get the password.</h2><br>
             <div class="main">
                 <div id="hexaflip-demo5" class="demo"></div>
                 <div>
@@ -53,7 +53,7 @@
             );
             submit.addEventListener('click', function(){
                 if(hexaDemo5.getValue().join(' ') === 'Q U I Z'){
-                    output.innerHTML = '<a style="color:white;font-size:20px;">You nailed it!</a>';
+                    output.innerHTML = '<a style="font-size:20px;">You nailed it!</a>';
                     hexaDemo5.flip();
                     hexaDemo5.flip();
                     hexaDemo5.flip();
@@ -64,7 +64,7 @@
                     hexaDemo5.flip();
                     setTimeout(function() {window.open("quizclub.html","_self");}, 1000);
                 }else{
-                    output.innerHTML = '<center><a style="color:white;font-size:20px;">Watch out, password incorrect!</a></center><br><a style="font-size:30px;float:right;top:1000px;text-decoration:none;color:white;" href="quizclub.html">Enter the site directly!</a>';
+                    output.innerHTML = '<center><a style="font-size:20px;">Watch out, password incorrect!</a></center><br><a style="font-size:30px;float:right;top:1000px;text-decoration:none;color:#424242;" href="quizclub.html">Enter the site directly!</a>';
                 }
             }, false);
         }, false);
